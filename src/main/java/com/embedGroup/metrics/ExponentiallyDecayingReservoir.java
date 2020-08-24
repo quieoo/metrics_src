@@ -132,6 +132,7 @@ public class ExponentiallyDecayingReservoir implements Reservoir {
         try {
             return new WeightedSnapshot(values.values());
         } finally {
+            values.clear();
             unlockForRegularUsage();
         }
     }

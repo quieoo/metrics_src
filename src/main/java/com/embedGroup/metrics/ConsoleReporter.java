@@ -273,7 +273,6 @@ public class ConsoleReporter extends ScheduledReporter {
             for (Map.Entry<String, Timer> entry : timers.entrySet()) {
                 output.println(entry.getKey());
                 printTimer(entry.getValue());
-                System.out.println("reset timer");
                 
                 entry.getValue().reset();
                 
