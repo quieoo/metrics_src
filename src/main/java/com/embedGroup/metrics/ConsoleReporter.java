@@ -274,7 +274,9 @@ public class ConsoleReporter extends ScheduledReporter {
                 output.println(entry.getKey());
                 printTimer(entry.getValue());
                 System.out.println("reset timer");
+                
                 entry.getValue().reset();
+                
             }
             output.println();
         }
